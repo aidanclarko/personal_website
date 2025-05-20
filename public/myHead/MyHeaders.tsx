@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import React, { useRef } from 'react'
+import React, { JSX, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { GLTF } from 'three-stdlib'
@@ -12,6 +12,8 @@ type GLTFResult = GLTF & {
     'Material_0.001': THREE.MeshStandardMaterial
   }
 }
+
+//chatgpt mess
 
 export default function Model(props: JSX.IntrinsicElements['group']) {
   // Fix the type assertion with a two-step approach
